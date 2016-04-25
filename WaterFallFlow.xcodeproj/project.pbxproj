@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F110DAC1CCDEC3E00ED8385 /* ShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F110DAB1CCDEC3E00ED8385 /* ShowLayout.m */; };
+		0F110DB01CCDFD1D00ED8385 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F110DAE1CCDFD1D00ED8385 /* NextViewController.m */; };
+		0F110DB11CCDFD1D00ED8385 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F110DAF1CCDFD1D00ED8385 /* NextViewController.xib */; };
+		0F110DB41CCDFF9600ED8385 /* MainLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F110DB31CCDFF9600ED8385 /* MainLayout.m */; };
+		0F110DB81CCE02E300ED8385 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F110DB61CCE02E300ED8385 /* Cell.m */; };
+		0F110DB91CCE02E300ED8385 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F110DB71CCE02E300ED8385 /* Cell.xib */; };
 		0F98F1F91CCDBDDC00090814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F1F81CCDBDDC00090814 /* main.m */; };
 		0F98F1FC1CCDBDDC00090814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F1FB1CCDBDDC00090814 /* AppDelegate.m */; };
 		0F98F1FF1CCDBDDC00090814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F1FE1CCDBDDC00090814 /* ViewController.m */; };
@@ -42,6 +47,14 @@
 /* Begin PBXFileReference section */
 		0F110DAA1CCDEC3E00ED8385 /* ShowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowLayout.h; sourceTree = "<group>"; };
 		0F110DAB1CCDEC3E00ED8385 /* ShowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowLayout.m; sourceTree = "<group>"; };
+		0F110DAD1CCDFD1D00ED8385 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		0F110DAE1CCDFD1D00ED8385 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		0F110DAF1CCDFD1D00ED8385 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		0F110DB21CCDFF9600ED8385 /* MainLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayout.h; sourceTree = "<group>"; };
+		0F110DB31CCDFF9600ED8385 /* MainLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLayout.m; sourceTree = "<group>"; };
+		0F110DB51CCE02E300ED8385 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		0F110DB61CCE02E300ED8385 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		0F110DB71CCE02E300ED8385 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		0F98F1F41CCDBDDC00090814 /* WaterFallFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterFallFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F98F1F81CCDBDDC00090814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F98F1FA1CCDBDDC00090814 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +144,14 @@
 				0F98F2321CCDD5E000090814 /* MyCell.xib */,
 				0F110DAA1CCDEC3E00ED8385 /* ShowLayout.h */,
 				0F110DAB1CCDEC3E00ED8385 /* ShowLayout.m */,
+				0F110DAD1CCDFD1D00ED8385 /* NextViewController.h */,
+				0F110DAE1CCDFD1D00ED8385 /* NextViewController.m */,
+				0F110DAF1CCDFD1D00ED8385 /* NextViewController.xib */,
+				0F110DB21CCDFF9600ED8385 /* MainLayout.h */,
+				0F110DB31CCDFF9600ED8385 /* MainLayout.m */,
+				0F110DB51CCE02E300ED8385 /* Cell.h */,
+				0F110DB61CCE02E300ED8385 /* Cell.m */,
+				0F110DB71CCE02E300ED8385 /* Cell.xib */,
 			);
 			path = WaterFallFlow;
 			sourceTree = "<group>";
@@ -265,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F98F20A1CCDBDDC00090814 /* LaunchScreen.storyboard in Resources */,
+				0F110DB91CCE02E300ED8385 /* Cell.xib in Resources */,
 				0F98F2341CCDD5E000090814 /* MyCell.xib in Resources */,
 				0F98F2071CCDBDDC00090814 /* Assets.xcassets in Resources */,
 				0F98F2021CCDBDDC00090814 /* Main.storyboard in Resources */,
+				0F110DB11CCDFD1D00ED8385 /* NextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +320,10 @@
 				0F98F22F1CCDBF6600090814 /* WaterFlowCollectionViewLayout.m in Sources */,
 				0F110DAC1CCDEC3E00ED8385 /* ShowLayout.m in Sources */,
 				0F98F1FC1CCDBDDC00090814 /* AppDelegate.m in Sources */,
+				0F110DB81CCE02E300ED8385 /* Cell.m in Sources */,
+				0F110DB01CCDFD1D00ED8385 /* NextViewController.m in Sources */,
 				0F98F1F91CCDBDDC00090814 /* main.m in Sources */,
+				0F110DB41CCDFF9600ED8385 /* MainLayout.m in Sources */,
 				0F98F2331CCDD5E000090814 /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

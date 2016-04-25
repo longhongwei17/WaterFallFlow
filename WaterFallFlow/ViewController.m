@@ -10,6 +10,7 @@
 #import "MyCell.h"
 #import "WaterFlowCollectionViewLayout.h"
 #import "ShowLayout.h"
+#import "NextViewController.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,WaterFlowCollectionViewLayoutDelegate>
 
@@ -73,7 +74,7 @@ static NSString * const cellIdentifier = @"cellIdentifier";
     MyCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MyCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor redColor];
     
-    NSLog(@"cell.frame=====%@",NSStringFromCGRect(cell.frame));
+//    NSLog(@"cell.frame=====%@",NSStringFromCGRect(cell.frame));
     return cell;
 }
 
@@ -85,6 +86,9 @@ static NSString * const cellIdentifier = @"cellIdentifier";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"item====%@",@(indexPath.item));
+    
+    NextViewController *nextVC = [[NextViewController alloc] initWithNibName:NSStringFromClass([NextViewController class]) bundle:nil];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 
