@@ -7,21 +7,87 @@
 //
 
 #import "ViewController.h"
+#import "MyCell.h"
+#import "WaterFlowCollectionViewLayout.h"
 
-@interface ViewController ()
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,WaterFlowCollectionViewLayoutDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (nonatomic, strong) NSMutableArray <NSNumber *>*dataList;
 
 @end
 
+static NSString * const cellIdentifier = @"cellIdentifier";
+
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self initUI];
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)initUI
+{
+    WaterFlowCollectionViewLayout *waterFlowLayout = [WaterFlowCollectionViewLayout waterFlowCollectiobViewLayoutWithColumn:3];
+  
+    waterFlowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    waterFlowLayout.columnSpacing = 10;
+    waterFlowLayout.rowSpacing = 10;
+    waterFlowLayout.delegate = self;
+    self.collectionView.collectionViewLayout = waterFlowLayout;
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([MyCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"MyCell"];
+    self.collectionView.alwaysBounceVertical = YES;
+    
+}
+
+- (NSMutableArray *)dataList
+{
+    if (!_dataList) {
+        _dataList = [NSMutableArray array];
+        for (NSInteger index = 0; index < 20; index ++) {
+            NSUInteger number = arc4random_uniform(100) + 100;
+            [_dataList addObject:@(number)];
+        }
+    }
+    return _dataList;
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.dataList.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MyCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MyCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor redColor];
+    
+    NSLog(@"cell.frame=====%@",NSStringFromCGRect(cell.frame));
+    return cell;
+}
+
+- (CGFloat)waterViewFlowLayout:(WaterFlowCollectionViewLayout *)waterViewFlowLayout itemHeightForIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.dataList[indexPath.item] floatValue];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"item====%@",@(indexPath.item));
+}
+
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
