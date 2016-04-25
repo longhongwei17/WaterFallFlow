@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MyCell.h"
 #import "WaterFlowCollectionViewLayout.h"
+#import "ShowLayout.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,WaterFlowCollectionViewLayoutDelegate>
 
@@ -32,13 +33,16 @@ static NSString * const cellIdentifier = @"cellIdentifier";
 
 - (void)initUI
 {
-    WaterFlowCollectionViewLayout *waterFlowLayout = [WaterFlowCollectionViewLayout waterFlowCollectiobViewLayoutWithColumn:3];
-  
-    waterFlowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-    waterFlowLayout.columnSpacing = 10;
-    waterFlowLayout.rowSpacing = 10;
-    waterFlowLayout.delegate = self;
-    self.collectionView.collectionViewLayout = waterFlowLayout;
+//    WaterFlowCollectionViewLayout *waterFlowLayout = [WaterFlowCollectionViewLayout waterFlowCollectiobViewLayoutWithColumn:3];
+//  
+//    waterFlowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+//    waterFlowLayout.columnSpacing = 10;
+//    waterFlowLayout.rowSpacing = 10;
+//    waterFlowLayout.delegate = self;
+//    self.collectionView.collectionViewLayout = waterFlowLayout;
+    
+    ShowLayout *layout = [ShowLayout showLayout];
+    self.collectionView.collectionViewLayout = layout;
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([MyCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"MyCell"];
     self.collectionView.alwaysBounceVertical = YES;

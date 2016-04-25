@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F110DAC1CCDEC3E00ED8385 /* ShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F110DAB1CCDEC3E00ED8385 /* ShowLayout.m */; };
 		0F98F1F91CCDBDDC00090814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F1F81CCDBDDC00090814 /* main.m */; };
 		0F98F1FC1CCDBDDC00090814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F1FB1CCDBDDC00090814 /* AppDelegate.m */; };
 		0F98F1FF1CCDBDDC00090814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F1FE1CCDBDDC00090814 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F110DAA1CCDEC3E00ED8385 /* ShowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowLayout.h; sourceTree = "<group>"; };
+		0F110DAB1CCDEC3E00ED8385 /* ShowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowLayout.m; sourceTree = "<group>"; };
 		0F98F1F41CCDBDDC00090814 /* WaterFallFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterFallFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F98F1F81CCDBDDC00090814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F98F1FA1CCDBDDC00090814 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				0F98F2301CCDD5DF00090814 /* MyCell.h */,
 				0F98F2311CCDD5E000090814 /* MyCell.m */,
 				0F98F2321CCDD5E000090814 /* MyCell.xib */,
+				0F110DAA1CCDEC3E00ED8385 /* ShowLayout.h */,
+				0F110DAB1CCDEC3E00ED8385 /* ShowLayout.m */,
 			);
 			path = WaterFallFlow;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				0F98F2051CCDBDDC00090814 /* WaterFallFlow.xcdatamodeld in Sources */,
 				0F98F1FF1CCDBDDC00090814 /* ViewController.m in Sources */,
 				0F98F22F1CCDBF6600090814 /* WaterFlowCollectionViewLayout.m in Sources */,
+				0F110DAC1CCDEC3E00ED8385 /* ShowLayout.m in Sources */,
 				0F98F1FC1CCDBDDC00090814 /* AppDelegate.m in Sources */,
 				0F98F1F91CCDBDDC00090814 /* main.m in Sources */,
 				0F98F2331CCDD5E000090814 /* MyCell.m in Sources */,
@@ -520,6 +526,7 @@
 				0F98F2261CCDBDDC00090814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F98F2271CCDBDDC00090814 /* Build configuration list for PBXNativeTarget "WaterFallFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +535,7 @@
 				0F98F2291CCDBDDC00090814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F98F22A1CCDBDDC00090814 /* Build configuration list for PBXNativeTarget "WaterFallFlowUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +544,7 @@
 				0F98F22C1CCDBDDC00090814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
