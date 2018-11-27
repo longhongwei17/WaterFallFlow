@@ -259,6 +259,7 @@
 				TargetAttributes = {
 					0F98F1F31CCDBDDC00090814 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LWML2LHD6P;
 					};
 					0F98F20F1CCDBDDC00090814 = {
 						CreatedOnToolsVersion = 7.3;
@@ -479,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LWML2LHD6P;
 				INFOPLIST_FILE = WaterFallFlow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -491,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LWML2LHD6P;
 				INFOPLIST_FILE = WaterFallFlow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
