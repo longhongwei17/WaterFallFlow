@@ -26,6 +26,7 @@
 		0F98F2331CCDD5E000090814 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F98F2311CCDD5E000090814 /* MyCell.m */; };
 		0F98F2341CCDD5E000090814 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F98F2321CCDD5E000090814 /* MyCell.xib */; };
 		543C32421F7AA2EA00AF95B0 /* CenterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 543C32401F7AA2EA00AF95B0 /* CenterLayout.m */; };
+		5444C6DB21AD230100985C77 /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444C6D921AD230100985C77 /* MyLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		0F98F2321CCDD5E000090814 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		543C32401F7AA2EA00AF95B0 /* CenterLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterLayout.m; sourceTree = "<group>"; };
 		543C32411F7AA2EA00AF95B0 /* CenterLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterLayout.h; sourceTree = "<group>"; };
+		5444C6D921AD230100985C77 /* MyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayout.m; sourceTree = "<group>"; };
+		5444C6DA21AD230100985C77 /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 		0F98F1F61CCDBDDC00090814 /* WaterFallFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5444C6DA21AD230100985C77 /* MyLayout.h */,
+				5444C6D921AD230100985C77 /* MyLayout.m */,
 				543C32411F7AA2EA00AF95B0 /* CenterLayout.h */,
 				543C32401F7AA2EA00AF95B0 /* CenterLayout.m */,
 				0F98F1FA1CCDBDDC00090814 /* AppDelegate.h */,
@@ -321,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F98F2051CCDBDDC00090814 /* WaterFallFlow.xcdatamodeld in Sources */,
+				5444C6DB21AD230100985C77 /* MyLayout.m in Sources */,
 				0F98F1FF1CCDBDDC00090814 /* ViewController.m in Sources */,
 				0F98F22F1CCDBF6600090814 /* WaterFlowCollectionViewLayout.m in Sources */,
 				0F110DAC1CCDEC3E00ED8385 /* ShowLayout.m in Sources */,
